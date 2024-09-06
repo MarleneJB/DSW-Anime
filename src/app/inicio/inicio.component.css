@@ -1,0 +1,123 @@
+/* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url('/src/assets/Fondo.png'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40% 50px;
+  text-align: center;
+  margin-top: 60px; /* Margen superior para evitar que el jumbotron se superponga con el navbar */
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Contenido */
+.container {
+  margin-top: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #f1c40f;
+}
+
+.card {
+  background-color: #1a1a1a; /* Fondo de la tarjeta */
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #d4ac0d;
+  border-color: #d4ac0d;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    padding: 50px 20px;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}

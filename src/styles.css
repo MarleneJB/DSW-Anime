@@ -1,0 +1,188 @@
+/* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;  /* Fondo del navbar */
+  padding: 15px 0;
+  display: flex;
+  justify-content: flex-start;  /* Alinea el contenido a la izquierda */
+  position: fixed;  /* Fija el navbar en la parte superior */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding-left: 20px;  /* Espacio desde el borde izquierdo de la página */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f1c40f;  /* Color de hover */
+}
+
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url('assets/Fondo.png');  /* Imagen de fondo */
+  background-size: cover;  /* La imagen cubre todo el área */
+  background-position: center;  /* La imagen se centra en el área */
+  color: #fff;  /* Texto blanco */
+  display: flex;  /* Uso de Flexbox para centrar */
+  flex-direction: column;  /* Alinea los elementos en columna (título y párrafo) */
+  justify-content: center;  /* Centrado vertical */
+  align-items: center;  /* Centrado horizontal */
+  height: 100vh;  /* La jumbotron ocupa toda la altura de la ventana */
+  text-align: center;  /* Centra el texto */
+  padding: 0;  /* Elimina el padding para asegurar un centrado adecuado */
+  margin-top: 60px;  /* Evita que se superponga con el navbar */
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+
+/* Contenido */
+/* Contenedor general */
+.container {
+  margin-top: 30px;  /* Espacio superior entre el contenido y la parte superior */
+  display: flex;
+  flex-wrap: wrap;  /* Permite que las tarjetas se envuelvan a la siguiente fila */
+  justify-content: space-between;  /* Distribuye el espacio entre las tarjetas */
+}
+
+/* Encabezado */
+/* Encabezado alineado a la izquierda y ocupando toda la fila */
+h2 {
+  margin-bottom: 20px;  /* Espacio inferior */
+  font-weight: 700;  /* Negrita */
+  color: #f1c40f;  /* Color amarillo */
+  text-align: center;  /* Alineación a la izquierda */
+  width: 100%;  /* El encabezado ocupará toda la fila */
+  padding-left: 0;  /* Asegura que no haya padding a la izquierda */
+}
+
+/* Contenedor general para las tarjetas */
+.cards-container {
+  margin-top: 30px;  /* Espacio superior */
+  display: flex;
+  flex-wrap: wrap;  /* Permite que las tarjetas se envuelvan a la siguiente fila */
+  justify-content: space-between;  /* Espacio entre las tarjetas */
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: #d3d3d3;  /* Fondo gris claro */
+  width: 17%;  /* Ancho para mostrar 5 tarjetas por fila */
+  margin-bottom: 20px;  /* Espacio inferior entre las tarjetas */
+  border-radius: 8px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra para las tarjetas */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);  /* Efecto de hover */
+}
+
+.card-title {
+  font-size: 1.2rem;  /* Tamaño de texto */
+  font-weight: 600;  /* Negrita */
+  background-color: #030622;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;  /* Texto gris oscuro */
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;  /* Imagen ajustada al contenedor */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+/* Botones */
+.btn-primary {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #d4ac0d;
+  border-color: #d4ac0d;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .jumbotron {
+    padding: 50px 20px;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}
