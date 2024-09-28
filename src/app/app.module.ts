@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module'; // Asegúrate de import
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
+import { SummaryComponent } from './summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HeroComponent } from './hero/hero.component';
     NavComponent,
     FooterComponent,
     HeroComponent,
+    SummaryComponent,
   ],
   imports: [
     BrowserModule,
